@@ -36,3 +36,7 @@ img {
 footer {
   margin: 10px;
 }
+
+article:nth-child(2) {
+  color: grey;
+}
