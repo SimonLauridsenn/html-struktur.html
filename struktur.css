@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+}
+
+main {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 10px;
+  max-width: 1000px;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  max-width: 50ch;
+  text-align: center;
+  margin: 10%;
+}
+
+article {
+  border: 1px solid;
+  margin-top: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+footer {
+  margin: 10px;
+}
