@@ -39,16 +39,54 @@
       <footer>Simon</footer>
     </main>
     <script>
+      //ænder overskrift
       const overskrift = document.querySelector("header h1");
       overskrift.textContent;
       console.log(overskrift.textContent);
+      overskrift.textContent = "Billeder";
+      console.log(overskrift.textContent);
 
+      //ændre underoverskrift
       const underoverskrift = document.querySelector("h3");
       underoverskrift.textContent;
       console.log(underoverskrift.textContent);
+      underoverskrift.textContent = "Ændret";
+      console.log(underoverskrift.textContent);
 
-      const article2 = document.querySelector("article:nth-child(2)");
-      console.log(article2);
+      //ændre billede
+      const pic1 = document.querySelector("article:nth-child(1) img");
+      console.log(pic1);
+      pic1.src = "Simon.png";
+      //skift alt text på billede
+      pic1.alt = "bs tailslide";
+
+      // ----lave en ny artikel----
+      let mainSection = document.querySelector("section");
+      //nyt articel element
+      let newArticle = document.createElement("article");
+      //nyt H# element
+      let overskrift1 = document.createElement("h3");
+      //den ændrede text (ny overskrift)
+      let overskriftText = document.createTextNode("Her mit nye artikel");
+      //indsæt text
+      overskrift1.appendChild(overskriftText);
+      //tilføjer overskrift til articel
+      newArticle.appendChild(overskrift1);
+
+      //tilføj billede til artikel 3
+      let billede = document.createElement("img");
+      billede.src = "Simon.png";
+      newArticle.appendChild(billede);
+
+      //tilføj paragraf til den nye artikel
+      let para = document.createElement("para");
+      console.log(para);
+      para.textContent =
+        "nyt text til artiklen den har dog ikke css på hvorfor?";
+      newArticle.appendChild(para);
+
+      // tilføjer article til section
+      mainSection.appendChild(newArticle);
     </script>
   </body>
 </html>

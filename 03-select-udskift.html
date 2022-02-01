@@ -4,16 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="struktur.css">
+    <link rel="stylesheet" href="struktur.css" />
     <title>Document</title>
   </head>
   <body>
-    
     <main>
-        <header> <h1>Min Struktur</h1> </header>
+      <header><h1>Min Struktur</h1></header>
+      <h2>Billeder</h2>
       <section>
-        <h2>Billeder</h2>
-        <div class="grid">
         <article>
           <h3>Billede 1</h3>
           <div><img src="https://placeimg.com/640/480/nature" /></div>
@@ -37,23 +35,22 @@
           </p>
         </article>
       </section>
-    </div>
-    <footer>Simon</footer>
+      ´
+      <footer>Simon</footer>
     </main>
     <script>
-        const overskrift = document.querySelector("header h1");
-         
-        console.log(overskrift.textContent);
+      const overskrift = document.querySelector("header h1");
 
-        const underoverskrift = document.querySelector("h3");
-        underoverskrift.textContent;
-        console.log(underoverskrift.textContent);
-        overskrift.textContent = "billeder";
-        console.log(underoverskrift.textContent);
+      console.log(overskrift.textContent);
 
-        const article2 =document.querySelector("article:nth-child(2)")
-        console.log(article2)
+      const underoverskrift = document.querySelector("h3");
+      underoverskrift.textContent;
+      console.log(underoverskrift.textContent);
+      overskrift.textContent = "billeder";
+      console.log(underoverskrift.textContent);
+
+      const article2 = document.querySelector("article:nth-child(2)");
+      console.log(article2);
     </script>
   </body>
-
 </html>

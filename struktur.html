@@ -4,16 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="struktur.css">
+    <link rel="stylesheet" href="struktur.css" />
     <title>Document</title>
   </head>
   <body>
-    
     <main>
-        <header> <h1>Min Struktur</h1> </header>
+      <header><h1>Min Struktur</h1></header>
+      <h2>Billeder</h2>
       <section>
-        <h2>Billeder</h2>
-        <div class="grid">
         <article>
           <h3>Billede 1</h3>
           <div><img src="https://placeimg.com/640/480/nature" /></div>
@@ -37,33 +35,25 @@
           </p>
         </article>
       </section>
-    </div>
-    <footer>Simon</footer>
+
+      <footer>Simon</footer>
     </main>
     <script>
-//ænder overskrift      
+      //ænder overskrift
       const overskrift = document.querySelector("header h1");
-      overskrift.textContent   
+      overskrift.textContent;
       console.log(overskrift.textContent);
       overskrift.textContent = "Billeder";
-      console.log(overskrift.textContent )
+      console.log(overskrift.textContent);
 
-//ændre underoverskrift
+      //ændre underoverskrift
       const underoverskrift = document.querySelector("h3");
       underoverskrift.textContent;
       console.log(underoverskrift.textContent);
       underoverskrift.textContent = "Ændret";
-      console.log(underoverskrift.textContent )
-      
-//tilføj billede
+      console.log(underoverskrift.textContent);
 
-
-
-
-
-      
-
-      
-      </script>
+      //tilføj billede
+    </script>
   </body>
 </html>
